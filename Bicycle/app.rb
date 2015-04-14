@@ -1,7 +1,6 @@
 require_relative "wheel"
 require_relative "mountainbike"
 require_relative "roadbike"
-#require 'BikeTricks'
 puts"What type of bike are you looking for? M/R"
 puts"M-MountainBike"
 puts"R-RoadBike"
@@ -17,9 +16,9 @@ if choice.downcase == "m"
 	W = Wheel.new(wheel_size)
 	M1 = MountainBike.new(color,W,suspension)
 	M1.list_details
-	#puts"Do you know any tricks?"
-	#gets.chomp
-	#M1.A360
+	puts"Do you know any tricks?"
+	gets.chomp
+	M1.A360
 elsif choice.downcase == "r"
 	puts"You are looking to purchase a Road Bike"
 	puts"What color would you like your bike to be?"
@@ -31,9 +30,9 @@ elsif choice.downcase == "r"
 	W = Wheel.new(wheel_size)
 	R1 = RoadBike.new(color,W,handlebar)
 	R1.list_details
-	#puts"Do you know any tricks?"
-	#gets.chomp
-	#M1.no_hander
+	puts"Do you know any tricks?"
+	gets.chomp
+	R1.no_hander
 else
 	puts" We don't have those bikes, bye"
 end

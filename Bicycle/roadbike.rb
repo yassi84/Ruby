@@ -3,9 +3,8 @@ class RoadBike < Bike
     attr_accessor :handlebar
     def initialize(color = nil, wheel = nil, handlebar = nil)
         @handlebar = handlebar
-        @color = color
-        @wheel =wheel
         @type = "Road Bike"
+        super(color,wheel)
     end
     def list_details
         puts "You are purchasing a Road Bikea:" 
